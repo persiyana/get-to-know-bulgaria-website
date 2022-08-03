@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="pageStyle.css" media="screen">
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Bulgaria - shop</title>
+    <script src="pageFunctions.js"></script>
+
+</head>
+<body>
+    <div id="backgroundB">
+        <img src="images/roses-left.png" id="leftRoseT">
+        <img src="images/roses-right.png" id="rightRoseT">
+        <img src="images/roses-left-bottom.png" id="leftRoseB">
+        <img src="images/roses-right-bottom.png" id="rightRoseB">
+        <ul id="menu">
+                <li class="menuItem"><a class="active" href="index.html">Home</a></li>
+                <li class="menuItem"><a id="currentTab" href="shop.html">Shop</a></li>
+                <li class="menuItem"><a href="recipes.html">Recipes</a></li>
+                <li class="menuItem"><a href="traditions.html">Traditions</a></li>
+                <li class="menuItem"><a href="myths.html">Myths & Legends</a></li>
+
+            
+        </ul>
+        <h1>SHOP</h1>
+        <div id="pageItems">
+            <table class="threeR">
+                <tr>
+                    <td>
+                        <div class="divCenter">
+                            <img src="images/rose-oil.png"  class="photo">
+                    
+                            <h3>Organic Bulgarian<br>Rose Oil 0.5ml</h3>
+                            <h4>Price: 39.15 лв</h4>
+                            <a class="button" href="#inf1">More Info</a>
+                            <a class="button" href="#buy" onclick="clearForm();">Buy</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="divCenter">
+                            <img src="images/lavander-oil.png"  class="photo">
+                    
+                            <h3>Bulgarian<br>Lavender Oil - 10/30ml</h3>
+                            <h4>Price: 11.65 лв</h4>
+                            <a class="button" href="#inf2">More Info</a>
+                            <a class="button" href="#buy" onclick="clearForm();">Buy</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="divCenter">
+                            <img src="images/womenC.png"  class="photo">
+                    
+                            <h3>Women's Costume<br>from the Region of Samokov</h3>
+                            <h4>Price: €318.15</h4>
+                            <a class="button" href="#inf3">More Info</a>
+                            <a class="button" href="#buy" onclick="clearForm();">Buy</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="divCenter">
+                            <img src="images/womenC2.png" class="photo">
+                    
+                            <h3>Women's costume<br>from North Bulgaria</h3>
+                            <h4>Price: €330.00</h4>
+                            <a class="button" href="#inf4">More Info</a>
+                            <a class="button" href="#buy" onclick="clearForm();">Buy</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="buy" class="overlay">
+            <div class="popup">
+                <h2>Buy the product</h2>
+                <a class="close" href="#" onclick="clearForm();">&times;</a>
+                <div class="content">
+                    <form>
+                        
+                        <div class="counter">
+                            <label for="name" id ="quantity">Quantity:</label>
+                            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                            <input type="text" value="1" id="count">
+                            <span class="up" onClick='increaseCount(event, this)'>+</span>
+                        </div>
+
+                        <label for="name">Full name:</label>
+                        <input type="text" id="name" name="user_name"><br>
+                        <label for="name">Phone number:</label>
+                        <input type="text" id="phoneNumber" name="user_phoneNumber"><br>
+                        <div class="details-box">
+                            <p>Delivery details:</p>
+                            
+                            
+                            <div>
+                                <input type="radio" id="courierOffice" name="delivery" value="courierOffice" onclick="hideHome(); showOffice();">
+                                <label for="courierOffice">Pick up in person from a courier office</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="byCourier" name="delivery" value="byCourier" onclick="showHome(); hideOffice();">
+                                <label for="byCourier">Delivery by courier</label>
+                            </div>
+                            <div id="home-address">
+<label for="name">Address:</label>
+<input type="text" id="addressH" name="addressH">
+                            </div>
+                            <div id="office-address">
+                            <label for="name">Office address:</label>
+                            <input type="text" id="addressO" name="addressO">
+                            </div>
+                            
+                        </div>
+
+                        <div class="details-box">
+                            <p>Method of payment:</p>
+                            <div>
+                                <input type="radio" id="byCard" name="payment" value="show" onclick="showCardInf();">
+                                <label for="byCard">Payment by card</label>
+                            </div>
+                        
+                            <div>
+                                <input type="radio" id="courierOfficeP" name="payment" value="hide" onclick="hideCardInf();">
+                                <label for="courierOfficeP">Cash on Delivery</label>
+                            </div>
+
+                            <div id ="card-info-box">
+                            <p>Please fill the empty fields:</p>
+                                <label for="name">Cardholder Name:</label>
+                                <input type="text" id="chName" name="chName"><br>
+
+                                <label for="name">Card Number:</label>
+                                <input type="text" id="cardNumber" name="cardNumber"><br>
+
+                                <label for="name">Expiry Date:</label>
+                                <input type="number" id="month" name="month" min="1" max="12" class="number">
+                                <label for="name"> / </label>
+                                <input type="number" id="year" name="year" min="0" max="99" class="number"><br>
+
+                                <label for="name">CVV:</label>
+                                <input type="text" id="code" name="code" minlength="3" maxlength="3" >
+                                
+                            </div>
+<a class="button" href="#buyFinish">Buy</a>
+                                
+                        </div>
+                            
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="buyFinish" class="overlay">
+            <div class="popupBought">
+                <h2>Your order has been placed!</h2>
+                <a class="close" href="#">&times;</a>
+            </div>
+            
+        </div>
+        <div id="inf1" class="overlay">
+            <div class="popup">
+                <h2>Organic Bulgarian Rose Oil 0.5ml</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>
+        
+                        Manufacturer: <a
+                            href="https://www.zoya.bg/en/shop/Zoya-BG-Organic-Natural-super-store.1/Zoya-Goes-Pretty-%C2%AE-m195"
+                            class="links">Zoya Goes Pretty ®</a><br><br>
+                        100% pure and natural rose essential oil<br><br>
+        
+        
+                        The Organic Bulgarian Rosa Damascena Oil (Rose Otto), obtained by steam distillation has one of the most
+                        valuable and
+                        distinct fragrances. Rose oil is widely used in the cosmetics and the perfume industry because of its
+                        complex molecular
+                        composition, healing, beautifying and therapeutic properties as well as its multilayered and deep
+                        fragrance.<br>
+        
+                        Our Rose Essential Oil is certified organic according to the strict Austria Bio Garantie standards. Our
+                        organic roses
+                        are grown without the use of pesticides, herbicides, or any other harmful additives.<br>
+        
+                        We offer our customers one of world’s most exquisite essential oil: steam-distilled certified organic
+                        Bulgarian Rose
+                        Oil-Rose Otto, a 100% pure, natural oil that does not contain any pesticide or herbicide
+                        residues.<br><br>
+        
+                        <strong>How to use:</strong><br>
+                        Dilute in carrier oil or another suitable base, before applying to the skin, or adding to the
+                        bathtub.<br><br>
+        
+                        <strong>Precautions:</strong><br>
+                        Make a sensitivity test in the inner part of the elbow, before applying to other areas. If you are
+                        pregnant,
+                        breastfeeding or have hypersensitive skin, see an aromatherapist first. Keep in dark, cool place, away
+                        from direct
+                        sunlight and inaccessible for children.<br><br>
+        
+                        <strong>Ingredients (INCI):</strong><br>
+                        Rosa damascena flower oil*, Eugenol**, Geraniol**, Citronellol**
+                        * organic ingredient, ** naturally occurring within essential oils<br>
+                        <strong>0.5 ml</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="inf2" class="overlay">
+            <div class="popup">
+                <h2>Bulgarian Lavender Oil - 10/30ml</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>
+        
+                        Manufacturer: <a
+                            href="https://www.zoya.bg/en/shop/Zoya-BG-Organic-Natural-super-store.1/Zoya-Goes-Pretty-%C2%AE-m195"
+                            class="links">Zoya Goes Pretty ®</a><br><br>
+                        <strong>Cosmetic use:</strong><br>
+                        moisturizing, nourishing, cleansing, stimulating, oily skin, aging skin, promotes hair growth<br><br>
+                        <strong>Perfumery:</strong><br>
+                        top to middle note/ fresh, floral-herbaceous with balsamic-woody undertone.<br>
+                        Blends well with: Rose, Pine, Clary sage, Rosemary, Oakmoss, Sandalwood, Ylang-Ylang, all citrus
+                        oils.<br><br>
+                        <strong>Directions for using essential oils:</strong><br>
+                        For external use only. All essential oils must be diluted in a vegetable oil or other suitable base and
+                        then used on the
+                        skin. Pre-made test for sensitivity is recommended - apply the essential oil in the pit of the elbow and
+                        wait at least
+                        12 hours for adverse reactions. Direct and intensive inhaling of essential oils is not recommended for
+                        longer than a
+                        period of 15-20 minutes. This does not apply to oils diffused through vapourisers or aroma lamps. If you
+                        are pregnant,
+                        breastfeeding or are interested in the use of essential oils for children, it is recommended first to
+                        consult an
+                        aromatherapist. Avoid contact with eyes, inner ears, and sensitive areas. Keep out of reach of children.
+                        Store in a
+                        cool, dry place.<br><br>
+                        <strong>Ingredients (INCI):</strong><br>
+                        Lavandula angustifolia (Lavender) oil*, Geraniol** (0.18%), Limonene** (0.15%), Linalool** (34.26%)
+                        * organic ingredient, ** naturally occurring within essential oils<br><br>
+        
+                        No alcohol. No parabens. No preservatives.
+                        100% pure organic essential oil from Bulgarian lavender<br>
+        
+                        <strong>10 / 30ml</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="inf3" class="overlay">
+            <div class="popup">
+                <h2>Women's Costume from the Region of Samokov</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>
+        By: Balkanfolk Atelier<br>
+        Year: 2022<br><br>
+                        Traditional Bulgarian women's costume from the Region of Samokov (Shopian Region ).<br><br>
+        
+                        The costume includes:<br>
+                        BF 120513 - Women's shirt with embroidery<br>
+                        BF 120522 - Sukman from Samokov<br>
+                        BF 120534 - Apron<br>
+                        BF 120552 - Belt<br><br>
+        
+                        Sizes: S, M, L, XL (XXL Price +10%)<br>
+                        If your size does not fall into the table after you place an order you will be able to send us your
+                        individual sizes.<br>
+                        The time for making the costume is 60 calendar days.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="inf4" class="overlay">
+            <div class="popup">
+                <h2>Women's costume from North Bulgaria</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <p>
+        By: Balkanfolk Atelier<br>
+        Year: 2021<br><br>
+                        Bulgarian women's traditional costume from North Bulgaria includes:<br>
+                        
+                        BF 321517 - Embroidered Shirt<br>
+                        BF 321528 - Brachnik<br>
+                        BF 321534 - Northern Apron<br><br>
+                        
+                        
+                        Head decorations from the picture is not included in the price.<br><br>
+                        
+                        Time for production: 60 days
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

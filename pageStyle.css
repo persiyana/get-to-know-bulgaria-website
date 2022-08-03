@@ -1,0 +1,367 @@
+#leftRoseT, #rightRoseT, #leftRoseB, #rightRoseB ,
+#rightRoseTh, #leftRoseTh{
+    position: fixed;
+    width: 12%;
+}
+#leftRoseT, #leftRoseB, #leftRoseTh{
+
+    left:1.5%;
+}
+#rightRoseT, #rightRoseB, #rightRoseTh{
+    right: 1.5%;
+}
+#leftRoseT,#rightRoseT{
+    top: 7.5%;
+}
+#leftRoseTh, #rightRoseTh {
+    top: 1.5%;
+}
+#leftRoseB, #rightRoseB{
+    bottom: 1.5%;
+}
+#backgroundB{
+    background-color: rgba(46, 15, 27, 0.356);
+    position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+        overflow-y: scroll;
+}  
+
+.homeMenu{
+    position: relative;
+    text-align: center;
+    width:40%;
+    margin:2.5%;
+    margin-left: 30%;
+    margin-bottom:2.5%;
+    font-size: 56px;
+}
+
+.homeMenu img{
+    width: 100%;
+    height: 100%;
+}
+.names{
+    font-size: 36px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overMenu{
+
+    
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height: 95.5%;
+    -webkit-text-stroke: 1px rgb(247, 185, 209);
+    color: rgb(78, 28, 48);
+    background-color: rgb(247, 185, 209, 0.397);
+}
+.overMenu:hover{
+    -webkit-text-stroke: 1px rgb(78, 28, 48);
+        color: rgb(247, 185, 209);
+        background-color: rgba(78, 28, 48, 0.514);
+}
+body{
+    background-image: url('images/background.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: rgb(78, 28, 48);
+}
+
+h1{
+    -webkit-text-stroke: 2px rgb(78, 28, 48);
+    color: rgb(247, 185, 209);
+    text-align: center;
+    font-size: 68px;
+    margin-top: 1.8%;
+}
+h3{
+    margin-top: 0.2em;
+    margin-bottom: 0.8em;
+    font-size: 20px;
+    
+}
+.divCenter{
+    text-align: center;
+}
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(78, 28, 48);
+    border-bottom: 3px solid rgb(247, 185, 209);
+}
+.threeR td {
+    padding-bottom: 15px;
+    width: 33.333%;
+}
+.threeR h4{
+    margin-top: -0.75em;
+}
+.twoR td {
+    padding-bottom: 15px;
+    width: 50%;
+}
+.twoR p{
+    margin-top: -0.75em;
+    margin-bottom: -1.25em;
+}
+.products td{
+    padding-bottom: 0px;
+}
+.products{
+    background-color: rgba(78, 28, 48, 0.781);
+    color: rgb(247, 185, 209);
+    width:95%;
+    margin-bottom: 16px;
+}
+.twoR h2{
+    text-align: center;
+  font-size: 28px;
+}
+.twoR h4{
+    font-size: 19px;
+    margin-bottom: 0.25em;
+}
+.menuItem {
+    float: left;
+
+}
+
+.menuItem a {
+    display: block;
+    color: rgb(247, 185, 209);
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.menuItem a:hover, #currentTab {
+    background-color: rgb(247, 185, 209);
+    color: rgb(78, 28, 48);
+    border-left: 2px solid rgb(78, 28, 48);
+}
+
+#pageItems{
+    background-color: rgba(247, 185, 209, 0.822);
+    position: fixed;
+    width:70%;
+    height:53%;
+    margin-left: 15%;
+    margin-top: -2%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-top: 10px solid rgb(78, 28, 48);
+    border-bottom: 10px solid rgb(78, 28, 48);
+}
+.photo{
+    margin-top: 4%;
+    margin-left: 8%;
+    width:84%;
+    border-radius: 20px/50px;
+}
+table{
+    width:100%;
+}
+input{
+    margin-bottom: 1em;
+}
+#card-info-box .number, #card-info-box #code{
+    width: 2em;
+}
+form .details-box{
+    padding-left: 13px;
+    border: 1.5px solid rgb(247, 185, 209);
+    border-radius: 20px/50px;
+    margin-bottom: 15px;
+    width:91%;
+    padding-bottom: 16px;
+}
+
+#card-info-box{
+    border: 1.5px solid rgb(247, 185, 209);
+        border-radius: 20px/50px;
+        margin: 13px;
+        margin-left: 0px;
+        padding-left: 13px;
+        margin-bottom: 16px;
+}
+
+
+
+form .button {
+    font-size: 1em;
+    padding: 6px;
+    color: rgb(247, 185, 209);
+    border: 2px solid rgb(247, 185, 209);
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    margin-left:16em;
+}
+
+form .button:hover {
+    color: rgb(78, 28, 48);
+    background: rgb(247, 185, 209);
+}
+
+.button {
+    margin-top: 1em;
+    font-size: 1em;
+    padding: 6px;
+    color:rgb(78, 28, 48);
+    border: 2px solid rgb(78, 28, 48);
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    color: rgb(247, 185, 209);
+    background: rgb(78, 28, 48);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    font-size:15px;
+    margin: 10% auto;
+    padding: 20px;
+    background: rgb(78, 28, 48);
+    border-radius: 5px;
+    width: 30%;
+    height:60%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popupBought{
+    margin: 20% auto;
+    padding: 20px;
+    border: 2px solid #b30093;
+    background: rgb(247, 185, 209);
+    color: rgb(78, 28, 48);
+    border-radius: 5px;
+    width: 22%;
+    height: 3em;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.popupBought h2{
+    margin-top: 0.5em;
+}
+.popup h2 {
+    margin-top: 0;
+    color: rgb(247, 185, 209);
+}
+
+.popup .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(247, 185, 209);
+}
+.popupBought .close{
+    position: absolute;
+        top: 5px;
+        right: 15px;
+        transition: all 200ms;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(78, 28, 48);
+}
+.popup .close:hover{
+    color: #efde00;
+}
+
+.popupBought .close:hover{
+        color:#e100b8
+    }
+
+.popup .content {
+    max-height: 84%;
+    overflow: auto;
+    color: rgb(247, 185, 209);
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
+.popup .content .links{
+    color: #efde00;
+}
+
+
+.counter {
+    
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+
+}
+
+.counter input {
+    width: 30px;
+    border: 0;
+    line-height: 10px;
+    text-align: center;
+    background: rgb(247, 185, 209);
+    color: rgb(78, 28, 48);
+    appearance: none;
+    outline: 0;
+}
+
+.counter span {
+    margin-top: -13px;
+    display: block;
+    padding: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(247, 185, 209);
+    user-select: none;
+}
+.counter #quantity{
+    margin-top: -12px;
+}
+.hide {
+    display: none;
+}
